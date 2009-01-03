@@ -1,0 +1,18 @@
+ActsAsLockable
+==============
+
+Allows you to create locks on a record so that it can't be accidentally deleted.
+
+
+Example
+=======
+
+@obj.locked?  => false
+@obj.lock!
+@obj.locked?  => true
+@obj.unlock!
+@obj.locked?  => false
+....
+
+
+Copyright (c) 2009 Thincloud, LLC., released under the MIT license
